@@ -1,3 +1,3 @@
 # StridesDevCore
 
-A description of this package.
+A library that holds Strides Development, LLC components. 
