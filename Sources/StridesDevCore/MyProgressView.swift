@@ -6,15 +6,20 @@
 //
 
 import SwiftUI
-
-struct MyProgressView: View {
-    var progress: Double
-    var progressColor: Color
+public struct MyProgressView: View {
+    public var progress: Double
+    public var progressColor: Color
     
     // Add this property.
-    var showProgressText = false
+    public var showProgressText = false
     
-    var body: some View {
+    public init(progress: Double, progressColor: Color, showProgressText: Bool = false) {
+        self.progress = progress
+        self.progressColor = progressColor
+        self.showProgressText = showProgressText
+    }
+    
+    public var body: some View {
         VStack {
             GeometryReader { geometry in
                 ZStack(alignment: .leading) {
