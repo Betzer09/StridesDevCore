@@ -22,8 +22,8 @@ public struct SDButton: View {
     }
 }
 
-struct SwiftUIView_Previews: PreviewProvider {
-    static var previews: some View {
+public struct SwiftUIView_Previews: PreviewProvider {
+    static public var previews: some View {
         SDButton()
-    }
+    } 
 }
