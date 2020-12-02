@@ -8,6 +8,8 @@
 import SwiftUI
 
 public struct SDButton: View {
+    public init() {}
+    
     public var body: some View {
         Button("Schedule a ride") {
             print("Button action")
@@ -25,5 +27,5 @@ public struct SDButton: View {
 public struct SwiftUIView_Previews: PreviewProvider {
     static public var previews: some View {
         SDButton()
-    } 
+    }
 }
