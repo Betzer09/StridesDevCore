@@ -9,10 +9,10 @@ import Foundation
 import UIKit
 import SwiftUI
 
-struct AppTheme {
+public struct AppTheme {
     
     /// The available App font sizes that should be used in the app.
-    enum FontSize: CGFloat {
+    public enum FontSize: CGFloat {
         /// Largest
         case HLarge = 36
         
@@ -29,14 +29,14 @@ struct AppTheme {
     }
     
     /// The apps fonts, by default all font sizes are set to 16
-    struct Fonts {
+    public struct Fonts {
         static let internBold = UIFont.interBold(ofSize: .Regular)
         static let internRegular = UIFont.interRegular(ofSize: .Regular)
         static let internSemiBold = UIFont.interSemiBold(ofSize: .Regular)
     }
     
     
-    struct Colors {
+    public struct Colors {
         static var primaryColor = UIColor(named: "PrimaryColor")!
     }
 }
