@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct SDButton: View {
-    var body: some View {
+public struct SDButton: View {
+    public var body: some View {
         Button("Schedule a ride") {
             print("Button action")
         }
